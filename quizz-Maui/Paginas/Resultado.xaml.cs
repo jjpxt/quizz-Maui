@@ -15,10 +15,10 @@ public partial class Resultado : ContentPage
 
         string nome = await SecureStorage.Default.GetAsync("nome");
         string parcial = await SecureStorage.Default.GetAsync("parcial");
-        double final = double.Parse(parcial) / 2 * 100;
+        double final = double.Parse(parcial) / 3 * 100;
 
 
         LBLSaudacao.Text = "Olá, " + nome + "!";
-        LBLResultado.Text = "Você acertou " + final + "% das respostas";
+        LBLResultado.Text = "Você acertou " + final.ToString("F0") + "% das respostas";
     }
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="quizz_Maui.Paginas.Questao1"
-             Title="Pergunta 1">
+             x:Class="quizz_Maui.Paginas.Questao3"
+             Title="Pergunta31">
     <VerticalStackLayout Margin="20">
         
         <Label 
             x:Name="LBLPergunta"
-            Text="Qual a cor do céu?"
+            Text="Quantas rodas tem esse carro?"
             FontSize="Large"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
@@ -16,10 +16,9 @@
             FontAttributes="Bold"
             Padding="10"
             />
-
-        <Image Source="ceu.jpg" />
-
         
+                <Image Source="carro.jpg" />
+
         <Border  Stroke="DarkGray" StrokeThickness="3" StrokeShape="RoundRectangle 20,0,0,20" Background="GhostWhite">
 
             <Border.Shadow>
@@ -33,37 +32,37 @@
             
             <VerticalStackLayout Margin="20,20">
                 <RadioButton
-                    Content="Vermelho"
+                    Content="3"
                     FontSize="23"
-                    TextColor="red"
+                    TextColor="DarkBlue"
                     FontAttributes="Italic"
                     CheckedChanged="verificar"
-                    Value="errado"
-                    />
-        
-                <RadioButton
-                    Content="Amarelo"
-                    FontSize="23"
-                    TextColor="Gold"
-                    FontAttributes="Italic"
-                    CheckedChanged="verificar"
-                    Value="errado"
-                    />
-        
-                <RadioButton
-                    Content="Azul"
-                    FontSize="23"
-                    TextColor="blue"
                     Value="certo"
+                    />
+        
+                <RadioButton
+                    Content="4"
+                    FontSize="23"
+                    TextColor="DarkBlue"
+                    FontAttributes="Italic"
+                    CheckedChanged="verificar"
+                    Value="errado"
+                    />
+        
+                <RadioButton
+                    Content="8"
+                    FontSize="23"
+                    TextColor="DarkBlue"
+                    Value="errado"
                     FontAttributes="Italic"
                     CheckedChanged="verificar"
                     />
 
                 <RadioButton
-                    Content="Verde"
+                    Content="6"
                     FontSize="23"
                     FontAttributes="Italic"
-                    TextColor="Green"
+                    TextColor="DarkBlue"
                     CheckedChanged="verificar"
                     Value="errado"
                     />

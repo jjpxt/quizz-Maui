@@ -1,11 +1,11 @@
 namespace quizz_Maui.Paginas;
 
-public partial class Questao2 : ContentPage
+public partial class Questao3 : ContentPage
 {
 	bool marcou = false;
 	bool acerto = false;
 
-	public Questao2()
+	public Questao3()
 	{
 		InitializeComponent();
 	}
@@ -41,11 +41,11 @@ public partial class Questao2 : ContentPage
             parcial = parcial + 1;
             await SecureStorage.SetAsync("parcial", parcial.ToString());
 
-            await Navigation.PushAsync(new Paginas.Questao3());
+            await Navigation.PushAsync(new Paginas.Resultado());
         }
         else
         {
-            await Navigation.PushAsync(new Paginas.Questao3());
+            await Navigation.PushAsync(new Paginas.Resultado());
         }
     }
 }
