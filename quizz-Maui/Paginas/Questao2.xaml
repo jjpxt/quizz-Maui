@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="quizz_Maui.Paginas.Questao2"
+             Title="Pergunta 2">
+    <VerticalStackLayout Margin="20">
+        
+        <Label 
+            x:Name="LBLPergunta"
+            Text="Qual a cor do cabelo?"
+            FontSize="Large"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            TextColor="#003"
+            FontAttributes="Bold"
+            Padding="10"
+            />
+        
+            <Image WidthRequest="300" Source="cabelos.jpg" />
+
+        <Border  Stroke="DarkGray" StrokeThickness="3" StrokeShape="RoundRectangle 20,0,0,20" Background="GhostWhite">
+
+            <Border.Shadow>
+                <Shadow
+                    Brush="Black"
+                    Opacity="0.8"
+                    Radius="9"
+                    Offset="10,10"
+                    />
+            </Border.Shadow>
+            
+            <VerticalStackLayout Margin="20,20">
+                <RadioButton
+                    Content="Vermelho"
+                    FontSize="23"
+                    TextColor="red"
+                    FontAttributes="Italic"
+                    CheckedChanged="verificar"
+                    Value="errado"
+                    />
+        
+                <RadioButton
+                    Content="Loiro"
+                    FontSize="23"
+                    TextColor="Gold"
+                    FontAttributes="Italic"
+                    CheckedChanged="verificar"
+                    Value="errado"
+                    />
+        
+                <RadioButton
+                    Content="Roxo"
+                    FontSize="23"
+                    TextColor="purple"
+                    Value="errado"
+                    FontAttributes="Italic"
+                    CheckedChanged="verificar"
+                    />
+
+                <RadioButton
+                    Content="Preto"
+                    FontSize="23"
+                    FontAttributes="Italic"
+                    TextColor="Black"
+                    CheckedChanged="verificar"
+                    Value="certo"
+                    />
+            </VerticalStackLayout>
+            
+        </Border>
+        
+        <Button
+            x:Name="BTNVerificar"
+            Text="Responder"
+            FontAttributes="Bold"
+            Margin="0,60"
+            FontSize="30"
+            Clicked="BTNVerificar_Clicked"
+            />
+    
+    </VerticalStackLayout>
+</ContentPage>

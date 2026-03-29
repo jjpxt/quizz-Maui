@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="quizz_Maui.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#D9C9EE">
+
+    <ScrollView>
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            Padding="30,0"
+            Spacing="25">
+            
+            <Image Source="figura.png" Aspect="AspectFit" HeightRequest="385" Margin="10"/>
+
+            <Label
+                Text="Teste seus conhecimentos"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                Style="{StaticResource Headline}"
+                />
+
+            <Button
+                x:Name="BTNIniciar"
+                Text="Iniciar Atividade" 
+                Clicked="BTNIniciar_Clicked"
+                FontSize="35"
+                HorizontalOptions="Fill" />
+                       
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
